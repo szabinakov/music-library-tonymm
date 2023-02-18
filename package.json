@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/tonymm55/music-library/issues"
   },
-  "homepage": "https://github.com/tonymm55/music-library#readme"
+  "homepage": "https://github.com/tonymm55/music-library#readme",
+  "devDependencies": {
+    "eslint": "^8.34.0"
+  }
 }
