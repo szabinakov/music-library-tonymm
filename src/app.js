@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use('/artists', artistRouter);
 
-// not in the solution
+// not in the music library solution. My Postman test only.
 app.get('/', (_, res) => {
     console.log('Refresh Browser!')
     res.status(200).json({ output: 'Hello Postman!' });

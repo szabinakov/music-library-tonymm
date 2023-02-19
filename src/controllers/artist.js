@@ -1,5 +1,5 @@
 // src/controllers/artist.js
-const db = require('../src/db/index.js')
+const db = require('../db/index.js');
 
 const createArtist = async (req, res) => {
   const { name, genre } = req.body
@@ -12,4 +12,4 @@ const createArtist = async (req, res) => {
   }
 };
 
-  module.exports = { createArtist } 
+module.exports = { createArtist } 
