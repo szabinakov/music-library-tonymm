@@ -28,7 +28,6 @@ describe('Update Artist', () => {
       const { status, body } = await request(app).patch(`/artists/${artist.id}`).send({ name: 'something different', genre: 'Rock' })
 
       expect(status).to.equal(200)
-
       expect(body).to.deep.equal({ id: artist.id, name: 'something different', genre: 'Rock' })
     })
 

@@ -101,12 +101,4 @@ const deleteArtist = async (req, res) => {
   }
 } 
 
-
-
-
-
-
-
-
-
 module.exports = { createArtist, getAllArtists, getArtistById, putArtist, updateArtist, deleteArtist } 
