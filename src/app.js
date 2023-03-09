@@ -8,14 +8,14 @@ app.use(express.json());
 
 app.use('/artists', artistRouter);
 
-// app.use('/artists', albumRouter);
+app.use('/artists', albumRouter);
 
-// app.use('/albums', albumRouter);
+app.use('/albums', albumRouter);
 
 // not in the music library solution. My Postman test only.
 app.get('/', (_, res) => {
     console.log('Refresh Browser!')
-    res.status(200).json({ output: 'Hello Postman!' });
+    res.status(200).json({ output: 'Hello NEW ALBUM!' });
   });
 
 module.exports = app;

@@ -1,10 +1,10 @@
 // src/routes/artist.js
 const express = require('express');
 const artistController = require('../controllers/artist');
-const albumController = require('../controllers/album');
+// const albumController = require('../controllers/album');
 const router = express.Router();
 
-router.post('/:id/albums', albumController.createAlbum);
+// router.post('/:id/albums', albumController.createAlbum);
 router.post('/', artistController.createArtist);
 router.get('/', artistController.getAllArtists); 
 router.get('/:id', artistController.getArtistById);
