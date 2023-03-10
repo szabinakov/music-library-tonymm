@@ -9,7 +9,7 @@ describe('create album', () => {
     let artist; 
     beforeEach(async () => { 
     const { rows } = await db.query('INSERT into Artists (name, genre) VALUES ($1, $2) RETURNING *', 
-    ['The Smiths', 'Indie']);  
+    ['The Stone Roses', 'Indie']);  
     
     artist = rows[0];
   });
