@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // tests/album-delete.js
 
 const { expect } = require('chai');
