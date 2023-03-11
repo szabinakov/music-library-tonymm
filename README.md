@@ -1,6 +1,9 @@
 # Music Library API:
 
-This is a Node.js Express API for managing artists and albums data. It provides HTTP endpoints for Creating, Reading, Updating, and Deleting (CRUD) artists and albums. The API uses the HTTP methods:
+The Music Library application is a key project from the Command Shift Software Engineering bootcamp (specifically, backend module). The project included the use of PostgreSQL, Docker, and Postman. The project used the Mocha library for database communication (integration) testing.
+Learning objectives included, how to design and implement an API which can perform CRUD operations on a database.
+
+The Music-Library is a Node.js Express API for managing artists and albums data. It provides HTTP endpoints for Creating, Reading, Updating, and Deleting (CRUD) artists and albums. The API uses the HTTP methods:
 
 - POST for creating new artists and albums
 - GET for retrieving artists and albums data
@@ -8,38 +11,7 @@ This is a Node.js Express API for managing artists and albums data. It provides 
 - PATCH for partially updating an artist or album
 - DELETE for deleting an artist or album
 
-## Installation:
-
-To use this API in your project, you need to set up a PostgreSQL database to store the artists and albums data. You can use a Docker container to run the PostgreSQL server and initialise the database.
-
-1. First clone the repo and install all dependencies:
-
-git clone https://github.com/tonymm55/music-library
-
-cd <your-repository>
-
-Run the command: npm install
-
-2. Install [Docker](https://docs.docker.com/get-docker/) on your system if it's not already installed
-
-3. Create a `.env` file in the root directory of this repository with the following parameters:
-
-   PGUSER=postgres
-   PGHOST=localhost
-   PGPASSWORD=password
-   PGDATABASE=music_library_dev
-   PGPORT=5432
-   PORT=3000
-
-4. Run the docker container with:
-
-docker run --name music-lib -p 5432:5432 -e POSTGRES_PASSWORD=password -d postgres
-
-5. Start the API server:
-
-Run the command: npm start
-
-## Guide
+## Methods and Endpoints Used:
 
 | Method | Endpoint            | Description                               |
 | ------ | ------------------- | ----------------------------------------- |
@@ -55,23 +27,6 @@ Run the command: npm start
 | PUT    | /albums/:id         | Replaces a specific album                 |
 | PATCH  | /albums/:id         | Updates a specific album                  |
 | DELETE | /albums/:id         | Deletes a specific album                  |
-
-## Dependencies:
-
-This project has the following dependencies:
-
-- dotenv: "^16.0.3"
-- express: "^4.18.2"
-- pg: "^8.9.0"
-- postgres-migrations: "^5.3.0"
-
-And the following devDependencies:
-
-- chai: "^4.3.7"
-- eslint: "^8.34.0"
-- mocha: "^10.2.0"
-- nodemon: "^2.0.20"
-- supertest: "^6.3.3"
 
 ## Contact me:
 
