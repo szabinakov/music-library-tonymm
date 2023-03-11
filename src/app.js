@@ -12,10 +12,10 @@ app.use('/artists', albumRouter);
 
 app.use('/albums', albumRouter);
 
-// not in the music library solution. My Postman test only.
+// not in the music library solution. My Postman connection test.
 app.get('/', (_, res) => {
     console.log('Refresh Browser!')
-    res.status(200).json({ output: 'Hello NEW ALBUM!' });
+    res.status(200).json({ output: 'Hello from Postman!' });
   });
 
 module.exports = app;

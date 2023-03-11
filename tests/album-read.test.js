@@ -22,7 +22,7 @@ describe('Read Albums', () => {
     albumData = await Promise.all([
       db.query(
         'INSERT INTO Album (name, year, artist_id) VALUES ($1, $2, $3) RETURNING *',
-        ['How Soon Is Now', 1989, artist_id]
+        ['How Soon Is Now', 1988, artist_id]
       ),
       db.query(
         'INSERT INTO Album (name, year, artist_id) VALUES ($1, $2, $3) RETURNING *',
@@ -30,7 +30,7 @@ describe('Read Albums', () => {
       ),
       db.query(
         'INSERT INTO Album (name, year, artist_id) VALUES ($1, $2, $3) RETURNING *',
-        ['Louder Than Bombs', 1988, artist_id]
+        ['Louder Than Bombs', 1990, artist_id]
       ),
     ]);
 

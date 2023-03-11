@@ -14,7 +14,6 @@ const loadEnv = () => {
     const databaseName = process.env.PGDATABASE
   
     delete process.env.PGDATABASE
-
     return databaseName
   }
 }
